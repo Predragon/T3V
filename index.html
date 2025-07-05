@@ -15,23 +15,22 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f8f9fa;
-            overflow-x: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
 
         .container {
             max-width: 100%;
             margin: 0 auto;
+            padding: 0;
             background: white;
             min-height: 100vh;
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
         }
 
-        /* Enhanced Header */
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 3rem 1.5rem;
+            padding: 2rem 1.5rem;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -55,7 +54,7 @@
         }
 
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
             position: relative;
@@ -63,68 +62,24 @@
         }
 
         .header .tagline {
-            font-size: 1.2rem;
-            opacity: 0.95;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .header .mission-statement {
             font-size: 1.1rem;
-            margin-bottom: 2rem;
-            position: relative;
-            z-index: 1;
-            font-weight: 500;
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-        }
-
-        .problem-statement {
-            background: rgba(255,255,255,0.95);
-            color: #2c3e50;
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 2rem 0;
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-
-        .problem-statement h3 {
-            font-size: 1.4rem;
+            opacity: 0.9;
             margin-bottom: 1rem;
-            color: #e74c3c;
+            position: relative;
+            z-index: 1;
         }
 
-        .problem-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .problem-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            background: rgba(231,76,60,0.1);
-            border-radius: 8px;
-            font-size: 0.9rem;
-        }
-
-        .problem-item::before {
-            content: '⚠️';
-            font-size: 1.2rem;
+        .header .emoji-line {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
         }
 
         .cta-primary {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
             color: white;
-            padding: 1.2rem 2.5rem;
+            padding: 1rem 2rem;
             border: none;
             border-radius: 50px;
             font-size: 1.1rem;
@@ -166,29 +121,20 @@
             color: #667eea;
         }
 
-        .social-proof-header {
-            margin-top: 2rem;
+        .availability-badge {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            display: inline-block;
             position: relative;
             z-index: 1;
         }
 
-        .waitlist-count {
-            background: rgba(255,255,255,0.15);
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-            backdrop-filter: blur(10px);
-        }
-
-        .media-mentions {
-            font-size: 0.8rem;
-            opacity: 0.9;
-        }
-
         .section {
-            padding: 3rem 1.5rem;
+            padding: 2rem 1.5rem;
             border-bottom: 1px solid #f0f0f0;
         }
 
@@ -197,8 +143,8 @@
         }
 
         .section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
             color: #2c3e50;
             display: flex;
             align-items: center;
@@ -206,136 +152,29 @@
         }
 
         .section h2 .emoji {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .section p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        /* Origin Story Section - Enhanced */
-        .origin-story {
-            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 2rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .origin-story::before {
-            content: '"';
-            position: absolute;
-            top: -1rem;
-            left: 1rem;
-            font-size: 6rem;
-            color: rgba(255,255,255,0.3);
-            font-family: serif;
-        }
-
-        .origin-story-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .origin-story h3 {
-            font-size: 1.6rem;
             margin-bottom: 1rem;
-            color: #2d3436;
-        }
-
-        .origin-story-quote {
-            font-size: 1.2rem;
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            color: #2d3436;
+            font-size: 1rem;
             line-height: 1.7;
         }
 
-        .origin-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .origin-stat {
-            background: rgba(255,255,255,0.3);
-            padding: 1rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .origin-stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2d3436;
-        }
-
-        .origin-stat-label {
-            font-size: 0.9rem;
-            color: #636e72;
-        }
-
-        .founder-bio {
-            font-size: 0.95rem;
-            color: #636e72;
-            border-top: 1px solid rgba(255,255,255,0.3);
-            padding-top: 1rem;
-        }
-
-        /* Enhanced Demo Section */
         .demo-section {
             background: #f8f9fa;
-            border-radius: 15px;
-            padding: 3rem 2rem;
-            margin: 2rem 0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
             text-align: center;
         }
 
-        .demo-intro {
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .demo-comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        @media (max-width: 768px) {
-            .demo-comparison {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-        }
-
-        .demo-column {
-            background: white;
+        .demo-mockup {
+            background: #fff;
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .demo-column h4 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .demo-column.before h4 {
-            color: #e74c3c;
-        }
-
-        .demo-column.after h4 {
-            color: #27ae60;
         }
 
         .phone-mockup {
@@ -350,7 +189,7 @@
             background: #f0f0f0;
             border-radius: 20px;
             padding: 1rem;
-            min-height: 300px;
+            min-height: 200px;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -360,13 +199,7 @@
             padding: 0.75rem;
             border-radius: 12px;
             margin: 0.25rem 0;
-            font-size: 0.85rem;
-            animation: messageSlide 0.5s ease-in-out;
-        }
-
-        @keyframes messageSlide {
-            from { opacity: 0; transform: translateX(20px); }
-            to { opacity: 1; transform: translateX(0); }
+            font-size: 0.9rem;
         }
 
         .message.user {
@@ -391,398 +224,459 @@
             border: 1px solid #ffeaa7;
         }
 
-        .message.suggestion {
-            background: #d4edda;
-            color: #155724;
-            align-self: center;
-            max-width: 90%;
-            border: 1px solid #c3e6cb;
-        }
-
-        /* Use Cases Section */
-        .use-cases-section {
-            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
-            border-radius: 15px;
-            padding: 3rem 2rem;
-            margin: 2rem 0;
-        }
-
-        .use-cases-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .use-case-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .use-case-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .use-case-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .use-case-title {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-
-        .use-case-description {
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-
-        .use-case-benefits {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-        }
-
-        .use-case-benefits ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .use-case-benefits li {
-            padding: 0.25rem 0;
-            color: #27ae60;
-        }
-
-        .use-case-benefits li::before {
-            content: '✓ ';
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        /* Privacy & Security Section */
-        .privacy-section {
-            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
+        .social-proof {
+            background: #e8f5e8;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
             border-left: 4px solid #27ae60;
         }
 
-        .privacy-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .privacy-feature {
+        .testimonial {
             background: white;
-            padding: 1.5rem;
             border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .privacy-feature .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .privacy-feature h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-
-        .privacy-feature p {
-            font-size: 0.9rem;
-            color: #555;
-            margin-bottom: 0;
-        }
-
-        /* Differentiation Section */
-        .differentiation-section {
-            background: #f0f8ff;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
             border-left: 4px solid #3498db;
         }
 
-        .comparison-table {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            overflow-x: auto;
-        }
-
-        .comparison-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
-
-        .comparison-table th {
-            background: #f8f9fa;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-
-        .comparison-table .checkmark {
-            color: #27ae60;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .comparison-table .cross {
-            color: #e74c3c;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* Enhanced Features Section */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border: 1px solid #f0f0f0;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-
-        .feature-card .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-
-        .feature-card p {
-            color: #555;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card .benefit {
-            background: #e8f5e8;
-            padding: 0.75rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: #27ae60;
-            font-weight: 500;
-        }
-
-        /* Testimonials with Photos */
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .testimonial-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: -0.5rem;
-            left: 1rem;
-            font-size: 4rem;
-            color: rgba(102,126,234,0.1);
-            font-family: serif;
-        }
-
-        .testimonial-content {
-            position: relative;
-            z-index: 1;
-        }
-
         .testimonial-quote {
-            font-size: 1.1rem;
             font-style: italic;
-            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
             color: #555;
-            line-height: 1.7;
         }
 
         .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .testimonial-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
             font-weight: 600;
-            font-size: 1.2rem;
+            color: #2c3e50;
+            font-size: 0.9rem;
         }
 
-        .testimonial-info {
+        .feature-list {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-item .check {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-right: 0.75rem;
+            margin-top: 0.1rem;
+        }
+
+        .feature-item .content {
             flex: 1;
         }
 
-        .testimonial-name {
+        .feature-item .title {
             font-weight: 600;
             color: #2c3e50;
             margin-bottom: 0.25rem;
         }
 
-        .testimonial-role {
+        .feature-item .description {
             font-size: 0.9rem;
-            color: #666;
+            color: #555;
+            line-height: 1.5;
         }
 
-        /* Pricing Section */
-        .pricing-section {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
+        .story-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            color: #2d3436;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-box::before {
+            content: '"';
+            position: absolute;
+            top: -0.5rem;
+            left: 0.5rem;
+            font-size: 4rem;
+            color: rgba(255,255,255,0.3);
+            font-family: serif;
+        }
+
+        .experience-box {
+            background: #e8f5e8;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #27ae60;
+        }
+
+        .experience-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-item .icon {
+            margin-right: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .target-list {
+            background: #fff5f5;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .target-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .target-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .target-item .bullet {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+
+        .looking-for-box {
+            background: #f0f8ff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .stats-box {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            color: white;
             text-align: center;
         }
 
-        .pricing-philosophy {
-            background: white;
+        .stat-item {
+            margin-bottom: 1rem;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .pricing-preview {
+            background: #f8f9fa;
             border-radius: 12px;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            border: 2px solid #e9ecef;
         }
 
         .pricing-tag {
             background: #27ae60;
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: 600;
-            margin: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.5rem;
             display: inline-block;
         }
 
-        .pricing-details {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 1rem;
-        }
-
-        /* Team Section */
-        .team-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .team-member {
-            background: rgba(255,255,255,0.1);
+        .timeline {
+            background: #fff3cd;
             border-radius: 12px;
             padding: 1.5rem;
-            text-align: center;
-            backdrop-filter: blur(10px);
+            margin: 1rem 0;
+            border-left: 4px solid #ffc107;
         }
 
-        .team-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.2);
+        .timeline-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
         }
 
-        .team-name {
-            font-size: 1.2rem;
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item .date {
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            color: #856404;
+            margin-right: 1rem;
+            min-width: 80px;
         }
 
-        .team-role {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            margin-bottom: 1rem;
-        }
-
-        .team-description {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            line-height: 1.6;
-        }
-
-        /* Newsletter Signup */
         .newsletter-signup {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            border-radius: 15px;
-            padding: 2.5rem 2rem;
-            margin: 3rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            margin: 2rem 0;
             color: white;
             text-align: center;
         }
 
         .newsletter-signup h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
         }
 
-        .newsletter-signup p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        .newsletter-signup input {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
         }
 
-        .
+        .newsletter-signup .cta-primary {
+            margin-top: 0.5rem;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-item {
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: white;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer .brand {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer .motto {
+            font-style: italic;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #ffd93d 100%);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(255,107,107,0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .badge {
+            background: #27ae60;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .badge.beta {
+            background: #3498db;
+        }
+
+        .badge.new {
+            background: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The Third Voice</h1>
+            <div class="tagline">AI for Emotionally Intelligent Relationships</div>
+            <div class="emoji-line">🧠💬 <strong>Real-time guidance. Healthier conversations. Stronger bonds.</strong></div>
+            
+            <a href="#signup" class="cta-primary">Join Beta Waitlist</a>
+            <a href="#demo" class="cta-secondary">See Demo</a>
+            
+            <div class="availability-badge">
+                🚀 Beta launching Q3 2025
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">🌍</span> Why We Exist</h2>
+            <p>Most relationships don't fail from lack of love — they break under pressure, miscommunication, and emotional overwhelm.</p>
+            <p>When tensions rise, we say things we don't mean. We misread tone. We argue over logistics instead of listening with empathy. That's where <span class="highlight">The Third Voice</span> comes in.</p>
+            
+            <div class="social-proof">
+                <div style="text-align: center; margin-bottom: 1rem;">
+                    <strong>📊 Over 2,847 couples on our waitlist</strong>
+                </div>
+                <div style="font-size: 0.9rem; color: #555;">
+                    Featured in: TechCrunch, Psychology Today, Family Court Review
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="demo">
+            <h2><span class="emoji">📱</span> See It In Action</h2>
+            <div class="demo-section">
+                <p><strong>Before The Third Voice:</strong></p>
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="message user">You never help with the kids anymore!</div>
+                        <div class="message user">I'm so tired of doing everything alone</div>
+                        <div class="message user">You don't even care about our family</div>
+                    </div>
+                </div>
+                
+                <p><strong>With The Third Voice:</strong></p>
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="message warning">⚠️ This message sounds accusatory. Try: "I'm feeling overwhelmed with parenting duties. Can we talk about sharing responsibilities?"</div>
+                        <div class="message user">I'm feeling overwhelmed with parenting duties. Can we talk about sharing responsibilities?</div>
+                        <div class="message ai">💡 Their response suggests they're defensive. They might be feeling criticized. Try acknowledging their contributions first.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">🤖</span> What We Do</h2>
+            <p>We're building an AI-powered communication guide that helps couples and co-parents talk — better.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="check">✅</div>
+                    <div class="content">
+                        <div class="title">Before You Send:</div>
+                        <div class="description">The AI reviews your message and helps reframe tone, timing, and clarity.</div>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="check">✅</div>
+                    <div class="content">
+                        <div class="title">After You Receive:</div>
+                        <div class="description">The AI helps you interpret intent, de-escalate, and respond with emotional intelligence.</div>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="check">✅</div>
+                    <div class="content">
+                        <div class="title">Over Time:</div>
+                        <div class="description">It learns your patterns, triggers, and communication styles — becoming a smarter, calmer guide.</div>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="check">✅</div>
+                    <div class="content">
+                        <div class="title">For Co-Parents:</div>
+                        <div class="description">Helps keep conversations child-focused, peaceful, and legally sound.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="emoji">💬</span> What People Are Saying</h2>
+            
+            <div class="testimonial">
+                <div class="testimonial-quote">"The Third Voice helped us avoid three potential fights last week. It's like having a relationship counselor in your pocket."</div>
+                <div class="testimonial-author">— Sarah M., Beta Tester</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-quote">"Co-parenting with my ex was a nightmare. This AI helps us stay focused on what matters: our kids."</div>
+                <div class="testimonial-author">— Marcus T., Single Dad</div>
+            </div>
+            
+            <div class="testimonial">
+            
